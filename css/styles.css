@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
+body
+{
+    font-family: "Geist";
+}
+.navbar 
+{
+    padding: 5pt;
+    border-style: solid;
+    border-width: 1pt;
+    border-color: rgb(172, 171, 171);
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    height: 10%;
+    background-color: whitesmoke;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}   
+.in-navbar
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links {
+  display: flex;
+  gap: 1.5rem;                
+  align-items: center;
+}
+.Title
+{
+    font-weight: bold;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+.fix
+{
+    width: 50%;
+    margin: 0 auto;
+}
+.name-box
+{
+    display: grid;
+    grid-template-columns: auto auto;
+    align-content: start;
+}
+.black-box
+{
+    display: flex;
+    align-items: center;
+    padding: 2pt;
+    background-color: black;
+    color:white;
+    margin-bottom: 3%;
+    margin-top: 3%;
+}
+.Text
+{
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.CV-photo-name
+{
+    display:flex;
+    grid-template-columns: auto auto;
+    justify-content: space-evenly;
+    margin-top: 1%;
+    margin-bottom: 5%;
+}
+.navbar-image
+{
+    width:25pt;
+    height:25pt
+}
+.bar
+{
+    width: 60%;
+    height: 4px;
+}
+.image-grid
+{
+    width: 24%;
+    height: 24%;
+}
+.footer
+{
+    padding: 5pt;
+    border-style: solid;
+    border-width: 1pt;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    height: 10%;
+}
+@media (min-width: 768px) and (max-width: 1023px)
+{
+    .navbar
+    {
+        width: 80%;
+    }
+    .Title
+    {
+        width: 80%;
+    }
+    .fix
+    {
+        width: 80%;
+    }
+    .Text
+    {
+        width: 80%;
+    }
+    .images-inGrid
+    {
+        width: 100%;
+        height: auto;
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: auto;
+        gap: 5pt;
+    }
+    .CV-photo-name
+    {
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 767px)
+{
+    .navbar
+    {
+        width: 92%;
+        height: auto;
+    }
+    .in-navbar
+    {
+        flex-wrap: wrap;
+        row-gap: 8pt;
+    }
+    .nav-links
+    {
+        gap: 0.75rem;
+    }
+    .Title
+    {
+        width: 90%;
+    }
+    .fix
+    {
+        width: 90%;
+    }
+    .Text
+    {
+        width: 90%;
+    }
+    .name-box
+    {
+        grid-template-columns: auto;
+    }
+    .images-inGrid
+    {
+        width: 100%;
+        height: auto;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        gap: 5pt;
+    }
+    .CV-photo-name
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+}
