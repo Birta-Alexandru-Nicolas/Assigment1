@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
+
+body {
+    margin: 0;
+    font-family: "Geist", Arial, sans-serif;
+    color: #111111;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    margin: 0;
+}
+
+.navbar {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.in-navbar {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 14px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-image {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+}
+
+.nav-links {
+    display: flex;
+    gap: 24px;
+}
+
+.nav-links a {
+    font-size: 14px;
+    color: #666666;
+}
+
+.nav-links a.active {
+    color: #111111;
+    font-weight: 600;
+}
+.Title {
+    max-width: 720px;
+    margin: 48px auto 8px auto;
+    padding: 0 20px;
+
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #666666;
+}
+
+.Text {
+    max-width: 720px;
+    margin: 0 auto 8px auto;
+    padding: 0 20px;
+
+    font-size: 16px;
+    color: #111111;
+}
+
+.Text ul {
+    padding-left: 20px;
+}
+
+.Text li {
+    margin-bottom: 4px;
+}
+
+.fix {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.name-box {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 48px 0 12px 0;
+}
+
+.name-box .Title {
+    margin: 0;
+    padding: 0;
+    max-width: none;
+    font-size: 22px;
+    text-transform: none;
+    color: #111111;
+}
+
+.black-box {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 6px;
+    background-color: #111111;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 48px;
+}
+
+.image-grid {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+}
+
+.CV-photo-name {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    max-width: 720px;
+    margin: 48px auto 8px auto;
+    padding: 0 20px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.CV-photo-name h1 {
+    margin: 0;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+.placeholder {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #e0e0e0;
+}
+.cv-section {
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    gap: 4px 24px;
+    max-width: 720px;
+    margin: 24px auto;
+    padding: 0 20px;
+}
+
+.cv-section .Title {
+    margin: 0;
+    padding: 0;
+    max-width: none;
+}
+
+.cv-section .Text {
+    margin: 0;
+    padding: 0;
+    max-width: none;
+}
+
+.bar {
+    max-width: 720px;
+    margin: 0 auto;
+    border: none;
+    border-top: 1px solid #e0e0e0;
+}
+
+.page-heading {
+    max-width: 720px;
+    margin: 48px auto 8px auto;
+    padding: 0 20px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 720px;
+    margin: 24px auto 48px auto;
+    padding: 0 20px;
+}
+
+.project-block {
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+}
+
+.project-block .Title {
+    margin: 0 0 8px 0;
+    padding: 0;
+    max-width: none;
+}
+
+.project-block .Text {
+    margin: 0;
+    padding: 0;
+    max-width: none;
+}
+
+.tech {
+    margin: 6px 0 0 0;
+    padding: 0;
+    font-size: 13px;
+    color: #666666;
+}
+
+.footer {
+    border-top: 1px solid #e0e0e0;
+    margin-top: 48px;
+}
+
+.footer-inner {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    font-size: 13px;
+    color: #666666;
+}
+
+@media (max-width: 640px) {
+    .cv-section {
+        grid-template-columns: 1fr;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .image-gallery {
+        gap: 8px;
+    }
+}
